@@ -1,0 +1,196 @@
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+body {
+  padding-top: 3.5rem;
+}
+p {
+  font-size: 14px;
+}
+
+
+/* CSS style for the Logo and Navigation bar */
+.bg-dark{
+  background-color: #525969;
+}
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+#entypo {
+  position: absolute;
+  font-size: 35px;
+  color: #FC0E49;
+} 
+#myname {
+  font-size: 24px;
+}
+.logo_title {
+  font-family: 'Parisienne', cursive;
+  font-size: 16px;
+  color: white;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 0px;
+}
+
+
+/* Primary marketing message CSS style */
+picture.cover img {
+  width: 100%;
+  height: 250px;
+  position: absolute;
+} 
+.container {
+  width: 100%;
+  height: 250px;  
+  position: relative;
+  padding: 18px;
+  padding-top: 30px;
+}
+.container h1 {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+.container p {
+  color: white;
+}
+.btn.btn-primary {
+  font-size: 14px;
+  background-color: #FC0E49;
+  border-color: #FC0E49;
+}
+.btn.btn-primary:hover {
+  background-color: #960c2e;
+  border-color: #960c2e;
+}
+
+
+/* Featured Work */
+.card-deck{
+  width: 100%;
+}
+.card-deck h1 {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 30px;
+}
+.card {
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.19);
+}
+.row.featured.work {
+  margin: 0px;
+  padding: 0px 30px;
+}
+#title {
+  width: 100%;
+}
+.work_picture img {
+  max-width: 100%;
+  position: relative;
+}
+.card-body h4 {
+  font-size: 20px;
+}
+
+
+/* Footer */
+footer {
+  width: 100%;
+  font-size: 14px;
+}
+[class*="zocial-"]:before {
+  color: black;
+  display: inline-block;
+  font-family: 'zocial', sans-serif;
+  text-shadow: 3px 3px 3px #aaa;
+  width: 2em;
+}
+a:hover [class*="zocial-"]:before {
+  color: #3d85c6;
+}
+#social {
+  text-align: center;
+  width: 100%;
+}
+
+
+
+@media screen and (min-width: 450px) {
+  .container {
+    padding: 28px;
+    padding-top: 50px;
+  }
+  .card-deck h1,.container h1 {
+    font-size: 24px;
+  } 
+}
+
+@media screen and (min-width: 575px) {
+  .card-text {
+    font-size: 18px;
+  }
+  .col-md-4 {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  picture.cover img {
+    height: 400px;
+  }  
+  .container {
+    height: 400px;
+    padding: 50px;
+    padding-top: 70px;
+  }   
+  .card-deck h1, .container h1 {
+    font-size: 28px;
+  }
+  .col-md-4 {
+      padding: 0px;
+  }
+  p, .btn.btn-primary {
+    font-size: 18px;
+  }
+  footer {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar-nav {
+    font-size: 20px;
+  }
+  .card-deck h1, .container h1 {
+    font-size: 34px;
+  }
+  p, .btn.btn-primary {
+    font-size: 18px;
+  }
+  .container { 
+    padding: 70px;
+  }
+  .card-body h4 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  picture.cover img {
+    height: 500px;
+  } 
+  .container {
+    height: 500px;
+  }
+  .card-deck h1, .container h1  {
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  p, .btn.btn-primary {
+    font-size: 20px;
+  }
+  .card-body h4 {
+    font-size: 24px;
+  }
+}
